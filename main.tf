@@ -4,5 +4,5 @@ module "web2" {
 
   label          = "demo-web2"
   instance_count = 2
-  size           = "medium"
+  size           = "large"
 }

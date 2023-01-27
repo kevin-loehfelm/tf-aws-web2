@@ -3,6 +3,6 @@ module "web2" {
   version = "0.0.7"
 
   label          = "demo-web2"
-  instance_count = 2
+  instance_count = 0
   size           = "medium"
 }

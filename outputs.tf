@@ -1,8 +1,19 @@
-output "web2" {
-  description = "Web 1 Instances and DNS Endpoint"
-  value = {
-    "dns_endpoint" = module.web2.dns_name
-    "servers"      = module.web2.instances
-    "size"         = module.web2.size
-  }
+output "label" {
+  description = "Resource label for web service"
+  value       = var.label
+}
+
+output "instance_ids" {
+  description = "Instances for web service"
+  value       = module.ha_web.instances
+}
+
+output "instance_size" {
+  description = "Instance size for web service"
+  value       = module.ha_web.size
+}
+
+output "dns_endpoint" {
+  description = "Endpoint for web service"
+  value       = module.ha_web.dns_name
 }

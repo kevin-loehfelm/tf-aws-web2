@@ -1,8 +1,8 @@
-module "web2" {
-  source  = "app.terraform.io/kloehfelm-demo/web-ha/aws"
+module "ha_web" {
+  source  = "app.terraform.io/kloehfelm-demo/high-availability-website/aws"
   version = "0.0.7"
 
-  label          = "demo-web2"
+  label          = var.label
   instance_count = 0
   size           = "medium"
 }

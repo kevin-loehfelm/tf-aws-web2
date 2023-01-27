@@ -10,9 +10,9 @@ No providers.
 
 The following Modules are called:
 
-### <a name="module_web2"></a> [web2](#module\_web2)
+### <a name="module_ha_web"></a> [ha\_web](#module\_ha\_web)
 
-Source: app.terraform.io/kloehfelm-demo/web-ha/aws
+Source: app.terraform.io/kloehfelm-demo/high-availability-website/aws
 
 Version: 0.0.7
 
@@ -26,12 +26,32 @@ No required inputs.
 
 ## Optional Inputs
 
-No optional inputs.
+The following input variables are optional (have default values):
+
+### <a name="input_label"></a> [label](#input\_label)
+
+Description: Application label
+
+Type: `string`
+
+Default: `"web"`
 
 ## Outputs
 
 The following outputs are exported:
 
-### <a name="output_web2"></a> [web2](#output\_web2)
+### <a name="output_dns_endpoint"></a> [dns\_endpoint](#output\_dns\_endpoint)
 
-Description: Web 1 Instances and DNS Endpoint
+Description: Endpoint for web service
+
+### <a name="output_instance_ids"></a> [instance\_ids](#output\_instance\_ids)
+
+Description: Instances for web service
+
+### <a name="output_instance_size"></a> [instance\_size](#output\_instance\_size)
+
+Description: Instance size for web service
+
+### <a name="output_label"></a> [label](#output\_label)
+
+Description: Resource label for web service
